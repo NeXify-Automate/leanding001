@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neXify - KI-Automatisierung für Ihr Business | Chat it. Automate it.</title>
     <meta name="description" content="Transformieren Sie Ihre Geschäftsprozesse mit neXify. Individuelle KI-Lösungen, die für Sie arbeiten. Flexible Finanzierung über Klarna. DSGVO-konform.">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="neXify - KI-Automatisierung für Ihr Business">
     <meta property="og:description" content="Individuelle KI-Lösungen, die für Sie arbeiten. Jetzt starten mit flexibler Finanzierung.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://neXify-automate.com">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -21,7 +21,7 @@
             --text-dark: #1F2937;
             --text-medium: #6B7280;
         }
-        
+
         /* Premium Glassmorphism */
         .glass-premium {
             background: rgba(255, 255, 255, 0.92);
@@ -31,7 +31,7 @@
             box-shadow: 0 12px 48px -8px rgba(31, 41, 55, 0.08),
                         0 0 0 1px rgba(255, 255, 255, 0.2) inset;
         }
-        
+
         .glass-dark {
             background: rgba(30, 41, 59, 0.92);
             backdrop-filter: blur(24px) saturate(180%);
@@ -40,41 +40,41 @@
             box-shadow: 0 12px 48px -8px rgba(0, 0, 0, 0.25),
                         0 0 0 1px rgba(255, 255, 255, 0.1) inset;
         }
-        
+
         /* Premium Gradient */
         .gradient-premium {
             background: linear-gradient(180deg, #F9FAFB 0%, #F3F4F6 50%, #E5E7EB 100%);
         }
-        
+
         .gradient-mesh {
-            background-image: 
+            background-image:
                 radial-gradient(at 40% 20%, rgba(159, 197, 84, 0.15) 0px, transparent 50%),
                 radial-gradient(at 80% 0%, rgba(30, 41, 59, 0.08) 0px, transparent 50%),
                 radial-gradient(at 0% 50%, rgba(159, 197, 84, 0.08) 0px, transparent 50%),
                 radial-gradient(at 80% 50%, rgba(30, 41, 59, 0.05) 0px, transparent 50%),
                 radial-gradient(at 0% 100%, rgba(159, 197, 84, 0.1) 0px, transparent 50%);
         }
-        
+
         /* Smooth Animations */
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             33% { transform: translateY(-10px) rotate(1deg); }
             66% { transform: translateY(5px) rotate(-1deg); }
         }
-        
+
         @keyframes pulse-soft {
             0%, 100% { opacity: 0.6; transform: scale(1); }
             50% { opacity: 0.8; transform: scale(1.05); }
         }
-        
+
         .float-animation {
             animation: float 8s ease-in-out infinite;
         }
-        
+
         .pulse-soft {
             animation: pulse-soft 4s ease-in-out infinite;
         }
-        
+
         /* Premium Buttons */
         .btn-primary {
             background-color: var(--nexify-green);
@@ -83,22 +83,22 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 14px 0 rgba(159, 197, 84, 0.25);
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 24px 0 rgba(159, 197, 84, 0.35);
         }
-        
+
         /* Premium Cards */
         .card-hover {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         .card-hover:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 60px -12px rgba(31, 41, 55, 0.15);
         }
-        
+
         /* Dashboard Mockup Styles */
         .dashboard-window {
             background: #FFFFFF;
@@ -106,7 +106,7 @@
             box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.15);
             overflow: hidden;
         }
-        
+
         .window-bar {
             background: #E5E7EB;
             height: 36px;
@@ -115,47 +115,47 @@
             padding: 0 16px;
             gap: 8px;
         }
-        
+
         .window-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
         }
-        
+
         /* Accordion Styles */
         .accordion-content {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
         }
-        
+
         .accordion-open .accordion-content {
             max-height: 2000px;
             transition: max-height 0.5s ease-in;
         }
-        
+
         .accordion-icon {
             transition: transform 0.3s ease;
         }
-        
+
         .accordion-open .accordion-icon {
             transform: rotate(90deg);
         }
-        
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
-        
+
         ::-webkit-scrollbar-track {
             background: #F3F4F6;
         }
-        
+
         ::-webkit-scrollbar-thumb {
             background: var(--nexify-green);
             border-radius: 5px;
         }
-        
+
         ::-webkit-scrollbar-thumb:hover {
             background: #8FB245;
         }
@@ -173,7 +173,7 @@
                     </span>
                     <span class="ml-3 text-sm text-gray-600 font-medium hidden sm:inline">Chat it. Automate it.</span>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#ki-bots" class="text-gray-700 hover:text-[#9FC554] font-medium transition-colors">KI-Bots</a>
@@ -184,7 +184,7 @@
                         Jetzt anfragen
                     </a>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,7 +193,7 @@
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden glass-premium border-t">
             <div class="px-4 pt-2 pb-4 space-y-2">
@@ -213,7 +213,7 @@
         <!-- Animated Background Elements -->
         <div class="absolute top-40 left-20 w-64 h-64 bg-[#9FC554] rounded-full opacity-10 blur-3xl float-animation"></div>
         <div class="absolute bottom-40 right-20 w-80 h-80 bg-[#1E293B] rounded-full opacity-10 blur-3xl float-animation" style="animation-delay: 4s;"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
                 <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
@@ -221,11 +221,11 @@
                     <span class="text-[#9FC554] block">arbeitet</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-                    Ihre individuell entwickelten KI-Assistenten automatisieren Geschäftsprozesse, 
+                    Ihre individuell entwickelten KI-Assistenten automatisieren Geschäftsprozesse,
                     beantworten Kundenanfragen und steigern Ihre Effizienz – rund um die Uhr.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20KI-Lösung&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20KI-Lösung.%0A%0AMeine%20Anforderungen:%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20unverbindliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen" 
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20KI-Lösung&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20KI-Lösung.%0A%0AMeine%20Anforderungen:%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20unverbindliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary px-8 py-4 rounded-full text-lg inline-flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -239,7 +239,7 @@
                         Individuelle Angebote entdecken
                     </a>
                 </div>
-                
+
                 <!-- Trust Badges -->
                 <div class="flex flex-wrap justify-center gap-6 md:gap-12 items-center">
                     <div class="text-center">
@@ -276,11 +276,11 @@
                     6 spezialisierte KI-Bots
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Jeder Bot wurde für spezifische Geschäftsaufgaben entwickelt und kann individuell 
+                    Jeder Bot wurde für spezifische Geschäftsaufgaben entwickelt und kann individuell
                     an Ihre Bedürfnisse angepasst werden. Die KI arbeitet selbstständig für Sie.
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- MailMentor -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
@@ -291,7 +291,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">MailMentor</h3>
                     <p class="text-gray-600 mb-4">
-                        Automatisiert Ihre E-Mail-Kommunikation intelligent. Beantwortet Anfragen, 
+                        Automatisiert Ihre E-Mail-Kommunikation intelligent. Beantwortet Anfragen,
                         sortiert Nachrichten und erstellt professionelle Antworten.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -315,7 +315,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- MarketMuse -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
@@ -325,7 +325,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">MarketMuse</h3>
                     <p class="text-gray-600 mb-4">
-                        Erstellt hochwertigen Content für Ihre Marketing-Kanäle. Von Blog-Artikeln 
+                        Erstellt hochwertigen Content für Ihre Marketing-Kanäle. Von Blog-Artikeln
                         bis Social Media Posts – immer im richtigen Ton.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -349,7 +349,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- LedgerLiaison -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
@@ -359,7 +359,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">LedgerLiaison</h3>
                     <p class="text-gray-600 mb-4">
-                        Automatisiert Ihre Buchhaltungsprozesse. Verarbeitet Rechnungen, 
+                        Automatisiert Ihre Buchhaltungsprozesse. Verarbeitet Rechnungen,
                         kategorisiert Ausgaben und erstellt Berichte.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -383,7 +383,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- WhatsWave -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mb-6">
@@ -393,7 +393,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">WhatsWave</h3>
                     <p class="text-gray-600 mb-4">
-                        Ihre WhatsApp Business Zentrale. Automatisiert Kundenkommunikation, 
+                        Ihre WhatsApp Business Zentrale. Automatisiert Kundenkommunikation,
                         versendet Broadcasts und managed Chatbot-Flows.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -417,7 +417,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Facebook Manager -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
@@ -427,7 +427,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Facebook Manager</h3>
                     <p class="text-gray-600 mb-4">
-                        Professionelles Social Media Management. Plant Posts, moderiert Kommentare 
+                        Professionelles Social Media Management. Plant Posts, moderiert Kommentare
                         und analysiert Ihre Performance.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -451,7 +451,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Instagram Assistant -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl flex items-center justify-center mb-6">
@@ -461,7 +461,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Instagram Assistant</h3>
                     <p class="text-gray-600 mb-4">
-                        Perfektioniert Ihr visuelles Storytelling. Plant Content, optimiert Hashtags 
+                        Perfektioniert Ihr visuelles Storytelling. Plant Content, optimiert Hashtags
                         und automatisiert Story-Interaktionen.
                     </p>
                     <ul class="space-y-2 text-sm">
@@ -497,11 +497,11 @@
                     Ihr KI-Command Center
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Ein intuitives Dashboard, das zeigt wie Ihre KI arbeitet. Verfolgen Sie in Echtzeit, 
+                    Ein intuitives Dashboard, das zeigt wie Ihre KI arbeitet. Verfolgen Sie in Echtzeit,
                     wie Ihre Bots Aufgaben erledigen und Zeit sparen.
                 </p>
             </div>
-            
+
             <!-- Dashboard Mockup -->
             <div class="dashboard-window max-w-6xl mx-auto">
                 <div class="window-bar">
@@ -514,7 +514,7 @@
                         neXify Dashboard - portal.nexify-automate.com
                     </div>
                 </div>
-                
+
                 <div class="p-8">
                     <!-- Stats Row -->
                     <div class="grid md:grid-cols-4 gap-6 mb-8">
@@ -533,7 +533,7 @@
                                 <div class="w-8 h-8 bg-purple-100 rounded"></div>
                             </div>
                         </div>
-                        
+
                         <div class="bg-gray-50 rounded-xl p-6">
                             <div class="flex items-center justify-between mb-2">
                                 <span class="text-sm text-gray-600 font-medium">Verarbeitete Aufgaben</span>
@@ -547,7 +547,7 @@
                                 <div class="text-xs text-gray-600 mt-1">71% des Monatslimits</div>
                             </div>
                         </div>
-                        
+
                         <div class="bg-gray-50 rounded-xl p-6">
                             <div class="flex items-center justify-between mb-2">
                                 <span class="text-sm text-gray-600 font-medium">Eingesparte Zeit</span>
@@ -558,7 +558,7 @@
                                 ≈ 3 Arbeitstage gespart
                             </div>
                         </div>
-                        
+
                         <div class="bg-gray-50 rounded-xl p-6">
                             <div class="flex items-center justify-between mb-2">
                                 <span class="text-sm text-gray-600 font-medium">Erfolgsrate</span>
@@ -586,7 +586,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Activity Feed & Bot Performance -->
                     <div class="grid md:grid-cols-2 gap-8">
                         <!-- Live Activity Feed -->
@@ -628,7 +628,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Bot Performance Chart -->
                         <div class="bg-white rounded-xl border border-gray-200 p-6">
                             <h3 class="text-lg font-bold mb-4">Bot-Performance heute</h3>
@@ -674,7 +674,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Feature Highlights -->
             <div class="grid md:grid-cols-3 gap-6 mt-12">
                 <div class="text-center">
@@ -716,11 +716,11 @@
                     Individuelle Lösungen für jeden Bedarf
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Von einzelnen KI-Bots bis zu kompletten Enterprise-Plattformen. 
+                    Von einzelnen KI-Bots bis zu kompletten Enterprise-Plattformen.
                     Wir entwickeln Ihre maßgeschneiderte Lösung – mit flexibler Finanzierung über Klarna.
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <!-- Standard KI-Bot -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
@@ -734,7 +734,7 @@
                             <div class="text-sm text-gray-600">oder ab 24,83€/Monat</div>
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-[#9FC554] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -764,7 +764,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="bg-gray-50 rounded-xl p-4 mb-6">
                         <p class="text-sm font-medium mb-2">Lieferumfang:</p>
                         <ul class="text-sm text-gray-600 space-y-1">
@@ -774,13 +774,13 @@
                             <li>• 30 Tage After-Sales Support</li>
                         </ul>
                     </div>
-                    
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Standard%20KI-Bot&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20einen%20Standard%20KI-Bot.%0A%0AMeine%20Anforderungen:%0A-%20Bot-Typ:%20%0A-%20Hauptaufgabe:%20%0A-%20Gewünschte%20KI:%20GPT-4%20/%20Claude%203%20/%20Gemini%0A%0ABitte%20senden%20Sie%20mir%20ein%20individuelles%20Angebot.%0A%0AMit%20freundlichen%20Grüßen" 
+
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Standard%20KI-Bot&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20einen%20Standard%20KI-Bot.%0A%0AMeine%20Anforderungen:%0A-%20Bot-Typ:%20%0A-%20Hauptaufgabe:%20%0A-%20Gewünschte%20KI:%20GPT-4%20/%20Claude%203%20/%20Gemini%0A%0ABitte%20senden%20Sie%20mir%20ein%20individuelles%20Angebot.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary w-full text-center py-3 rounded-full">
                         Jetzt anfragen →
                     </a>
                 </div>
-                
+
                 <!-- KI Webdesign Paket -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="flex justify-between items-start mb-6">
@@ -793,7 +793,7 @@
                             <div class="text-sm text-gray-600">oder ab 49,83€/Monat</div>
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-[#9FC554] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -823,7 +823,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="bg-gray-50 rounded-xl p-4 mb-6">
                         <p class="text-sm font-medium mb-2">Lieferumfang:</p>
                         <ul class="text-sm text-gray-600 space-y-1">
@@ -833,13 +833,13 @@
                             <li>• Content-Management-System</li>
                         </ul>
                     </div>
-                    
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20KI%20Webdesign%20Paket&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20das%20KI%20Webdesign%20Paket.%0A%0AMeine%20Vorstellungen:%0A-%20Branche:%20%0A-%20Gewünschte%20Seiten:%20%0A-%20KI-Bot%20Funktion:%20%0A-%20Design-Stil:%20%0A%0ABitte%20senden%20Sie%20mir%20weitere%20Informationen.%0A%0AMit%20freundlichen%20Grüßen" 
+
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20KI%20Webdesign%20Paket&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20das%20KI%20Webdesign%20Paket.%0A%0AMeine%20Vorstellungen:%0A-%20Branche:%20%0A-%20Gewünschte%20Seiten:%20%0A-%20KI-Bot%20Funktion:%20%0A-%20Design-Stil:%20%0A%0ABitte%20senden%20Sie%20mir%20weitere%20Informationen.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary w-full text-center py-3 rounded-full">
                         Jetzt anfragen →
                     </a>
                 </div>
-                
+
                 <!-- White-Label Shop System -->
                 <div class="glass-premium rounded-2xl p-8 card-hover relative overflow-hidden">
                     <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
@@ -855,7 +855,7 @@
                             <div class="text-sm text-gray-600">oder ab 83,17€/Monat</div>
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-[#9FC554] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -885,7 +885,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="bg-gray-50 rounded-xl p-4 mb-6">
                         <p class="text-sm font-medium mb-2">Lieferumfang:</p>
                         <ul class="text-sm text-gray-600 space-y-1">
@@ -896,13 +896,13 @@
                             <li>• Admin-Schulung (2h remote)</li>
                         </ul>
                     </div>
-                    
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20White-Label%20KI%20Shop&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20einen%20White-Label%20KI%20Shop.%0A%0AMeine%20Informationen:%0A-%20Branche:%20%0A-%20Anzahl%20Produkte:%20%0A-%20Gewünschte%20Features:%20%0A-%20Budget:%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20eine%20Beratung.%0A%0AMit%20freundlichen%20Grüßen" 
+
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20White-Label%20KI%20Shop&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20einen%20White-Label%20KI%20Shop.%0A%0AMeine%20Informationen:%0A-%20Branche:%20%0A-%20Anzahl%20Produkte:%20%0A-%20Gewünschte%20Features:%20%0A-%20Budget:%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20eine%20Beratung.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary w-full text-center py-3 rounded-full">
                         Jetzt anfragen →
                     </a>
                 </div>
-                
+
                 <!-- Enterprise Lösung -->
                 <div class="glass-premium rounded-2xl p-8 card-hover">
                     <div class="flex justify-between items-start mb-6">
@@ -915,7 +915,7 @@
                             <div class="text-sm text-gray-600">individuelle Finanzierung</div>
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-[#9FC554] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -945,7 +945,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="bg-gray-50 rounded-xl p-4 mb-6">
                         <p class="text-sm font-medium mb-2">Mögliche Features:</p>
                         <ul class="text-sm text-gray-600 space-y-1">
@@ -956,14 +956,14 @@
                             <li>• Und vieles mehr...</li>
                         </ul>
                     </div>
-                    
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Enterprise%20KI-Plattform&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20Enterprise%20KI-Plattform.%0A%0AUnternehmensinformationen:%0A-%20Firma:%20%0A-%20Mitarbeiteranzahl:%20%0A-%20Branche:%20%0A%0AAnforderungen:%0A-%20%0A-%20%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20ausführliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen" 
+
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Enterprise%20KI-Plattform&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20Enterprise%20KI-Plattform.%0A%0AUnternehmensinformationen:%0A-%20Firma:%20%0A-%20Mitarbeiteranzahl:%20%0A-%20Branche:%20%0A%0AAnforderungen:%0A-%20%0A-%20%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20ausführliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary w-full text-center py-3 rounded-full">
                         Beratungstermin vereinbaren →
                     </a>
                 </div>
             </div>
-            
+
             <!-- Financing Info -->
             <div class="glass-premium rounded-2xl p-8 text-center">
                 <div class="max-w-3xl mx-auto">
@@ -974,7 +974,7 @@
                         Flexible Finanzierung mit Klarna
                     </h3>
                     <p class="text-lg text-gray-700 mb-6">
-                        Alle unsere individuellen Lösungen können Sie bequem über Klarna finanzieren. 
+                        Alle unsere individuellen Lösungen können Sie bequem über Klarna finanzieren.
                         Wählen Sie zwischen 3, 6, 9 oder 12 Monatsraten – ganz ohne Zusatzkosten.
                     </p>
                     <div class="grid md:grid-cols-3 gap-6">
@@ -1007,11 +1007,11 @@
                     Standard SaaS-Tarife
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Für alle, die sofort starten möchten. Monatlich kündbar, 
+                    Für alle, die sofort starten möchten. Monatlich kündbar,
                     keine Einrichtungsgebühr, volle Flexibilität.
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Starter -->
                 <div class="glass-premium rounded-2xl p-8">
@@ -1046,12 +1046,12 @@
                             <span>E-Mail Support</span>
                         </li>
                     </ul>
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Starter%20Tarif" 
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Starter%20Tarif"
                        class="block w-full text-center py-3 rounded-full border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition">
                         Jetzt starten
                     </a>
                 </div>
-                
+
                 <!-- Professional -->
                 <div class="glass-premium rounded-2xl p-8 relative border-2 border-[#9FC554]">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#9FC554] text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
@@ -1094,12 +1094,12 @@
                             <span>Priority E-Mail & Chat Support</span>
                         </li>
                     </ul>
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Professional%20Tarif" 
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Professional%20Tarif"
                        class="btn-primary block w-full text-center py-3 rounded-full">
                         Jetzt starten
                     </a>
                 </div>
-                
+
                 <!-- Business -->
                 <div class="glass-premium rounded-2xl p-8">
                     <h3 class="text-2xl font-bold mb-2">Business</h3>
@@ -1139,22 +1139,22 @@
                             <span>24/7 Telefon Support</span>
                         </li>
                     </ul>
-                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Business%20Tarif" 
+                    <a href="mailto:support@nexify-automate.com?subject=Anfrage%20Business%20Tarif"
                        class="block w-full text-center py-3 rounded-full border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition">
                         Jetzt starten
                     </a>
                 </div>
             </div>
-            
+
             <!-- Trial Banner -->
             <div class="mt-12 text-center">
                 <div class="glass-premium rounded-2xl p-8 max-w-3xl mx-auto">
                     <h3 class="text-2xl font-bold mb-3">24 Stunden kostenlos testen</h3>
                     <p class="text-lg text-gray-700 mb-6">
-                        Testen Sie alle Features 24 Stunden lang völlig kostenlos und unverbindlich. 
+                        Testen Sie alle Features 24 Stunden lang völlig kostenlos und unverbindlich.
                         Keine Kreditkarte erforderlich.
                     </p>
-                    <a href="mailto:support@nexify-automate.com?subject=24h%20Test%20anfordern" 
+                    <a href="mailto:support@nexify-automate.com?subject=24h%20Test%20anfordern"
                        class="btn-primary px-8 py-3 rounded-full inline-flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -1170,21 +1170,21 @@
     <section class="py-24 bg-gradient-to-br from-[#1E293B] to-[#0F172A] text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-96 h-96 bg-[#9FC554] rounded-full opacity-10 blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full opacity-5 blur-3xl"></div>
-        
+
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl md:text-5xl font-black mb-6">
                 Bereit, Ihre KI-Zukunft zu starten?
             </h2>
             <p class="text-xl mb-8 opacity-90">
-                Lassen Sie uns gemeinsam Ihre individuelle KI-Lösung entwickeln. 
+                Lassen Sie uns gemeinsam Ihre individuelle KI-Lösung entwickeln.
                 Unverbindliche Beratung, transparente Preise, flexible Finanzierung.
             </p>
-            
+
             <div class="glass-dark rounded-2xl p-8 max-w-2xl mx-auto">
                 <h3 class="text-2xl font-bold mb-6">Kontaktieren Sie uns</h3>
-                
+
                 <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <a href="tel:+31613318856" 
+                    <a href="tel:+31613318856"
                        class="glass-dark hover:bg-white/10 p-6 rounded-xl transition group">
                         <svg class="w-8 h-8 text-[#9FC554] mb-3 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
@@ -1193,8 +1193,8 @@
                         <div class="text-sm opacity-80">+31 6 133 188 56</div>
                         <div class="text-xs opacity-60 mt-2">Mo-Fr 9-18 Uhr</div>
                     </a>
-                    
-                    <a href="mailto:support@nexify-automate.com" 
+
+                    <a href="mailto:support@nexify-automate.com"
                        class="glass-dark hover:bg-white/10 p-6 rounded-xl transition group">
                         <svg class="w-8 h-8 text-[#9FC554] mb-3 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -1204,12 +1204,12 @@
                         <div class="text-xs opacity-60 mt-2">Antwort innerhalb 24h</div>
                     </a>
                 </div>
-                
+
                 <div class="text-center">
                     <p class="text-sm opacity-80 mb-4">
                         Oder senden Sie uns direkt eine Anfrage:
                     </p>
-                    <a href="mailto:support@nexify-automate.com?subject=Individuelle%20Anfrage&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20KI-Lösung.%0A%0AMeine%20Anforderungen:%0A-%20%0A-%20%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20unverbindliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen" 
+                    <a href="mailto:support@nexify-automate.com?subject=Individuelle%20Anfrage&body=Hallo%20neXify-Team,%0A%0Aich%20interessiere%20mich%20für%20eine%20individuelle%20KI-Lösung.%0A%0AMeine%20Anforderungen:%0A-%20%0A-%20%0A-%20%0A%0ABitte%20kontaktieren%20Sie%20mich%20für%20ein%20unverbindliches%20Beratungsgespräch.%0A%0AMit%20freundlichen%20Grüßen"
                        class="btn-primary px-8 py-4 rounded-full text-lg inline-flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -1242,7 +1242,7 @@
                         <p>Niederlande</p>
                     </div>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Schnellzugriff</h3>
@@ -1254,7 +1254,7 @@
                         <li><a href="mailto:support@nexify-automate.com" class="text-gray-400 hover:text-[#9FC554] transition">Kontakt</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Contact -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
@@ -1282,14 +1282,14 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Legal Accordion -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Rechtliches</h3>
                     <div class="space-y-2">
                         <!-- Impressum -->
                         <div class="accordion-item">
-                            <button onclick="toggleAccordion('impressum')" 
+                            <button onclick="toggleAccordion('impressum')"
                                     class="w-full text-left py-2 px-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition flex items-center justify-between">
                                 <span class="text-sm font-medium">Impressum</span>
                                 <svg class="w-4 h-4 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1304,30 +1304,30 @@
                                     <p>Willem II Singel 5, 6041 HP Roermond, Niederlande</p>
                                     <p class="mt-2">Registereintrag: Kamer van Koophandel (KvK) Nr. 90483944</p>
                                     <p>Umsatzsteuer-Identifikationsnummer: NL865786276B01</p>
-                                    
+
                                     <p class="mt-3"><strong>Kontakt:</strong></p>
                                     <p>Telefon: +31 6 133 188 56</p>
                                     <p>E-Mail: support@nexify-automate.com</p>
                                     <p>Website: https://nexify-automate.com</p>
-                                    
+
                                     <p class="mt-3">Inhaltlich Verantwortlicher gemäß § 55 RStV: Pascal Courbois (Anschrift wie oben)</p>
-                                    
+
                                     <p class="mt-3"><strong>Haftung für Inhalte:</strong></p>
                                     <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität übernehmen wir jedoch keine Gewähr.</p>
-                                    
+
                                     <p class="mt-3"><strong>Haftung für Links:</strong></p>
                                     <p>Links zu externen Websites Dritter liegen außerhalb unseres Verantwortungsbereichs. Für deren Inhalte übernehmen wir keine Haftung.</p>
-                                    
+
                                     <p class="mt-3"><strong>Streitschlichtung:</strong></p>
                                     <p>Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" class="text-[#9FC554] hover:underline" target="_blank">https://ec.europa.eu/consumers/odr</a></p>
                                     <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Rücknahmebedingungen -->
                         <div class="accordion-item">
-                            <button onclick="toggleAccordion('ruecknahme')" 
+                            <button onclick="toggleAccordion('ruecknahme')"
                                     class="w-full text-left py-2 px-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition flex items-center justify-between">
                                 <span class="text-sm font-medium">Rücknahmebedingungen</span>
                                 <svg class="w-4 h-4 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1338,22 +1338,22 @@
                                 <div class="p-4 bg-gray-800 rounded-lg mt-2 text-sm text-gray-400">
                                     <p class="mb-2"><strong>Gegenstand</strong></p>
                                     <p>neXify – Chat it. Automate it. erbringt individuell konfigurierte, digitale Dienstleistungen und Softwarelösungen.</p>
-                                    
+
                                     <p class="mt-3"><strong>Ausschluss der Rücknahme</strong></p>
                                     <p>Auf maßgeschneiderte digitale Leistungen, einmalige Softwarebereitstellungen (z. B. White-Label-Lösungen) und Einzellösungen gemäß Kundenanforderung besteht kein Widerrufs- oder Rückgaberecht.</p>
-                                    
+
                                     <p class="mt-3"><strong>Verbraucherinformation</strong></p>
                                     <p>Gemäß § 312g Abs. 2 Nr. 1 BGB sind digitale Inhalte, die nicht auf einem körperlichen Datenträger geliefert werden, vom Widerrufsrecht ausgeschlossen, sobald mit der Ausführung begonnen wurde. Durch die individuelle Anpassung entfällt jegliches Rückgabe- oder Rückerstattungsrecht.</p>
-                                    
+
                                     <p class="mt-3"><strong>Kulanzregelung</strong></p>
                                     <p>Sollten in seltenen Fällen technische Mängel auftreten, prüfen wir gern eine kostenlose Nachbesserung oder – in Einzelfällen – eine Teilgutschrift. Bitte kontaktieren Sie dafür unseren Support unter support@nexify-automate.com.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- AGB -->
                         <div class="accordion-item">
-                            <button onclick="toggleAccordion('agb')" 
+                            <button onclick="toggleAccordion('agb')"
                                     class="w-full text-left py-2 px-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition flex items-center justify-between">
                                 <span class="text-sm font-medium">AGB</span>
                                 <svg class="w-4 h-4 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1363,23 +1363,69 @@
                             <div id="agb" class="accordion-content">
                                 <div class="p-4 bg-gray-800 rounded-lg mt-2 text-sm text-gray-400" style="max-height: 400px; overflow-y: auto;">
                                     <h4 class="font-semibold mb-2">Allgemeine Geschäftsbedingungen (AGB)</h4>
-                                    
+
                                     <p class="mt-3"><strong>1. Geltungsbereich</strong></p>
                                     <p>1.1 Diese AGB gelten für alle Verträge zwischen neXify – Chat it. Automate it. (nachfolgend „neXify") und ihren Kunden (nachfolgend „Kunde"), soweit nicht etwas Abweichendes ausdrücklich vereinbart ist.</p>
                                     <p>1.2 Entgegenstehende oder abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, neXify stimmt ihrer Geltung schriftlich zu.</p>
-                                    
+
                                     <p class="mt-3"><strong>2. Vertragsgegenstand</strong></p>
                                     <p>2.1 neXify bietet eine Software-as-a-Service-Plattform ("Portal") zur KI-gestützten Business-Automatisierung an.</p>
                                     <p>2.2 Leistungsumfang, Laufzeit und Preise ergeben sich aus dem jeweils verbindlichen Angebot oder dem Online-Bestellprozess.</p>
-                                    
+
                                     <p class="mt-3"><strong>3. Vertragsschluss</strong></p>
                                     <p>3.1 Der Vertrag kommt mit Annahme des Angebots durch neXify oder mit Aktivierung des Accounts im Portal zustande.</p>
                                     <p>3.2 Für Geschäftskunden gilt kein Widerrufsrecht, siehe Ziffer 6.</p>
-                                    
+
                                     <p class="mt-3"><strong>4. Preise und Zahlung</strong></p>
                                     <p>4.1 Alle Preise verstehen sich zuzüglich der gesetzlichen Mehrwertsteuer.</p>
                                     <p>4.2 Zahlungen erfolgen monatlich im Voraus per SEPA-Lastschrift oder Kreditkarte.</p>
                                     <p>4.3 Kommt der Kunde mit der Zahlung in Verzug, ist neXify berechtigt, den Zugriff bis zum Zahlungseingang zu sperren.</p>
-                                    
+
                                     <p class="mt-3"><strong>5. Leistungszeit und Trial</strong></p>
-                                    <p>5.1 Das 24-Stunden-Testabo („Trial") startet mit Freischaltung des Kundenaccounts
+                                    <p>5.1 Das 24-Stunden-Testabo („Trial") startet mit Freischaltung des Kundenaccounts und endet automatisch nach 24 Stunden.</p>
+                                    <p>5.2 Bei weiterer Nutzung nach Ablauf des Trials erfolgt automatisch der Übergang in das kostenpflichtige Abonnement.</p>
+
+                                    <p class="mt-3"><strong>6. Widerrufsrecht für Verbraucher</strong></p>
+                                    <p>6.1 Verbrauchern steht ein 14-tägiges Widerrufsrecht zu.</p>
+                                    <p>6.2 Das Widerrufsrecht erlischt bei digitalen Inhalten ohne körperlichen Datenträger, wenn die Ausführung mit ausdrücklicher Zustimmung vor Ablauf der Widerrufsfrist begonnen hat.</p>
+
+                                    <p class="mt-3"><strong>7. Haftung</strong></p>
+                                    <p>7.1 neXify haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Schäden aus der Verletzung einer wesentlichen Vertragspflicht.</p>
+                                    <p>7.2 Im Übrigen ist die Haftung auf den typischen, vorhersehbaren Schaden begrenzt.</p>
+
+                                    <p class="mt-3"><strong>8. Anwendbares Recht</strong></p>
+                                    <p>Es gilt das Recht der Niederlande unter Ausschluss des UN-Kaufrechts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const button = content.previousElementSibling;
+            const icon = button.querySelector('.accordion-icon');
+
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(90deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Initialize accordion - hide all content by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionContents = document.querySelectorAll('.accordion-content');
+            accordionContents.forEach(content => {
+                content.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
